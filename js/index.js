@@ -77,7 +77,6 @@ let popUp = (id) => {
 };
 
 let popUpDetails = (data) => {
-  // console.log(data.accuracy.score);
   let modalBody = document.getElementById("modal-body");
   modalBody.innerHTML = `
    <div class ="d-flex flex-lg-row flex-column gap-4 container">
@@ -150,15 +149,15 @@ let popUpDetails = (data) => {
   let price2 = document.getElementById("price2");
 
   if (price.innerText === "0" || price.innerText === "No cost") {
-    price.innerText = "Free of Cost/";
+    price.innerText = "Free of Cost";
   } else {
   }
   if (price1.innerText === "0" || price1.innerText === "No cost") {
-    price1.innerText = "Free of Cost/";
+    price1.innerText = "Free of Cost";
   } else {
   }
   if (price2.innerText === "0" || price2.innerText === "No cost") {
-    price2.innerText = "Free of Cost/";
+    price2.innerText = "Free of Cost";
   } else {
   }
 
@@ -175,7 +174,7 @@ let popUpDetails = (data) => {
     <p class="mt-5 fw-bold text-secondary">No data Found</p>
     `;
   } else {
-    // console.log("no");
+    
   }
 
   let accuracy = document.getElementById("accuracy");
@@ -201,8 +200,7 @@ seeMore.addEventListener("click", function () {
   toggleSpin(true);
   seeMore.style.visibility = "hidden";
 
-  //  data = data.slice(0, 12);
-  // loadData1(data);
+
   let url = "https://openapi.programming-hero.com/api/ai/tools";
   fetch(url)
     .then((res) => res.json())
