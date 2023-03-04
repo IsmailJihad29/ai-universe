@@ -11,60 +11,60 @@ let loadData1 =(data)=> {
     seeMore.style.visibility = "visible";
   }
 
-//   for (let i of data) {
-//     let mainCard = document.getElementById("mainCard");
-//     let newCard = document.createElement("div");
-//     newCard.classList.add("col");
-//     newCard.innerHTML = `
-//     <div class="col ">
-//     <div class="card shadow rounded bg-transparent">
-//       <img class=" h-50 " src="${i.image}" class=" rounded card-img-top" alt="...">
-//       <div class="card-body ">
-//         <h5 class="card-title">Features</h5>
-//         <p class="card-text fw-semibold mt-4 text-secondary">1. ${i.features[0]}</p>
-//         <p class="card-text fw-semibold text-secondary">2. ${i.features[1]}</p>
-//         <p class="card-text fw-semibold text-secondary">3. ${i.features[2]}</p>
-//       <hr>
-//     <div class = "d-flex justify-content-between align-items-center">
-//     <div><h3>${i.name}</h3>
-//     <h5 class="text-secondary"> ${i.published_in}</h5></div>
+  for (let i of data) {
+    let mainCard = document.getElementById("mainCard");
+    let newCard = document.createElement("div");
+    newCard.classList.add("col");
+    newCard.innerHTML = `
+    <div class="col ">
+    <div class="card shadow rounded bg-transparent">
+      <img class=" h-50 " src="${i.image}" class=" rounded card-img-top" alt="...">
+      <div class="card-body ">
+        <h5 class="card-title">Features</h5>
+        <p class="card-text fw-semibold mt-4 text-secondary">1. ${i.features[0]}</p>
+        <p class="card-text fw-semibold text-secondary">2. ${i.features[1]}</p>
+        <p class="card-text fw-semibold text-secondary">3. ${i.features[2]}</p>
+      <hr>
+    <div class = "d-flex justify-content-between align-items-center">
+    <div><h3>${i.name}</h3>
+    <h5 class="text-secondary"> ${i.published_in}</h5></div>
     
-//     <div>
-//     <button onclick="popUp('${i.id}')" class ="btn btn-outline-warning rounded p-2 " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Details </button>
-//     </div>
-//     </div>
+    <div>
+    <button onclick="popUp('${i.id}')" class ="btn btn-outline-warning rounded p-2 " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Details </button>
+    </div>
+    </div>
     
-//         </div>
-//     </div>
-//   </div>
+        </div>
+    </div>
+  </div>
 
-//   <section id="modalArea" class="container ">
+  <section id="modalArea" class="container ">
         
-//         <div class="modal modal-lg fade "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-//   <div class="modal-dialog">
-//     <div class="modal-content p-lg-5" >
+        <div class="modal modal-lg fade "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-lg-5" >
     
-//       <div class="modal-header">
+      <div class="modal-header">
        
-//         <button type="button" class=" p-3  btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-//       </div>
-//       <div class="modal-body" id= "modal-body">
+        <button type="button" class=" p-3  btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id= "modal-body">
          
-//       </div>
-//       <div class="modal-footer">
-//         <button type="button" class="btn btn-outline-warning p-3 rounded" data-bs-dismiss="modal">Close</button>
-//       </div>
-//     </div>
-//   </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-warning p-3 rounded" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
  
-// </div>
+</div>
 
-//       </section>
-//     `;
-//     mainCard.appendChild(newCard);
-//   }
-//   toggleSpin(false);
-// };
+      </section>
+    `;
+    mainCard.appendChild(newCard);
+  }
+  toggleSpin(false);
+};
 
 //
 
